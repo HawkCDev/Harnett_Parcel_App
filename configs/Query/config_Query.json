@@ -1,0 +1,87 @@
+{
+  "queries": [
+    {
+      "name": "Search by Acreage",
+      "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Tax/TaxParcel/MapServer/15",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "TOTAL_ACREAGE",
+              "label": "TOTAL_ACREAGE",
+              "shortType": "number",
+              "type": "esriFieldTypeDouble"
+            },
+            "operator": "numberOperatorIsBetween",
+            "valueObj": {
+              "isValid": false,
+              "type": "value",
+              "value1": null,
+              "value2": null
+            },
+            "interactiveObj": {
+              "prompt": "Acreage is between",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "A${PhysicalAddress}",
+        "fields": [
+          {
+            "name": "PID",
+            "alias": "PID",
+            "specialType": "none"
+          },
+          {
+            "name": "PIN",
+            "alias": "PIN",
+            "specialType": "none"
+          },
+          {
+            "name": "TOTAL_ACREAGE",
+            "alias": "TOTAL_ACREAGE",
+            "specialType": "none"
+          },
+          {
+            "name": "Name1",
+            "alias": "Name1",
+            "specialType": "none"
+          },
+          {
+            "name": "PhysicalAddress",
+            "alias": "PhysicalAddress",
+            "specialType": "none"
+          }
+        ]
+      },
+      "resultsSymbol": {
+        "color": [
+          155,
+          187,
+          89,
+          128
+        ],
+        "outline": {
+          "color": [
+            115,
+            140,
+            61,
+            255
+          ],
+          "width": 1.5,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    }
+  ]
+}

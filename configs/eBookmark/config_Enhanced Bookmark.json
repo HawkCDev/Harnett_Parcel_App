@@ -1,0 +1,59 @@
+{
+  "addbookmarks": true,
+  "bookmarks": [
+    {
+      "name": "Harnett Cities",
+      "items": [
+        {
+          "name": "Lillington",
+          "extent": {
+            "xmin": -8779462.986743571,
+            "ymin": 4214389.6774701625,
+            "xmax": -8768379.617642237,
+            "ymax": 4222033.38029867,
+            "spatialReference": {
+              "wkid": 102100
+            }
+          }
+        },
+        {
+          "name": "Angier",
+          "extent": {
+            "xmin": -8770491.190548625,
+            "ymin": 4229399.998899635,
+            "xmax": -8759407.82144729,
+            "ymax": 4237043.701728143,
+            "spatialReference": {
+              "wkid": 102100
+            }
+          }
+        },
+        {
+          "name": "Coats",
+          "extent": {
+            "xmin": -8759775.674645897,
+            "ymin": 4217557.036829689,
+            "xmax": -8754233.990095228,
+            "ymax": 4221378.8882439425,
+            "spatialReference": {
+              "wkid": 102100
+            }
+          }
+        },
+        {
+          "name": "Erwin",
+          "extent": {
+            "xmin": -8762593.025757065,
+            "ymin": 4203473.514368129,
+            "xmax": -8751509.65665573,
+            "ymax": 4211117.217196637,
+            "spatialReference": {
+              "wkid": 102100
+            }
+          }
+        }
+      ],
+      "expanded": true
+    }
+  ]
+}

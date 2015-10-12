@@ -1,0 +1,334 @@
+{
+  "name": "BufferedPoints",
+  "displayName": "Buffer Points",
+  "description": "Buffer one or more points to the same distance.",
+  "category": "",
+  "helpUrl": "http://gistoolbox.harnett.org/arcgis/rest/directories/arcgisoutput/Resources/BufferedPoint_GPServer/Resources_BufferedPoint/BufferedPoints.htm",
+  "serverInfo": {
+    "currentVersion": 10.31,
+    "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Resources/BufferedPoint/GPServer/",
+    "hasResultMapServer": false,
+    "supportsUpload": true,
+    "maxUploadFileSize": 2000
+  },
+  "useResultMapServer": false,
+  "taskUrl": "http://gistoolbox.harnett.org/arcgis/rest/services/Resources/BufferedPoint/GPServer/Buffer Points",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "Input_Features",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Test",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Input Features",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "draw",
+      "tooltip": "Input Features",
+      "symbol": {
+        "color": [
+          128,
+          0,
+          15,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "name": "Distance",
+      "dataType": "GPLinearUnit",
+      "description": "Test",
+      "defaultValue": {
+        "distance": 1,
+        "units": "esriMiles"
+      },
+      "category": "",
+      "label": "Distance",
+      "visible": true,
+      "required": true
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "Output_Polygons",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Test",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 102719,
+          "latestWkid": 2264
+        },
+        "fields": [
+          {
+            "name": "FID",
+            "type": "esriFieldTypeOID",
+            "alias": "FID"
+          },
+          {
+            "name": "ADDRESSID",
+            "type": "esriFieldTypeDouble",
+            "alias": "ADDRESSID"
+          },
+          {
+            "name": "ADDRESS_TY",
+            "type": "esriFieldTypeString",
+            "alias": "ADDRESS_TY",
+            "length": 16
+          },
+          {
+            "name": "ADDRESS_NU",
+            "type": "esriFieldTypeDouble",
+            "alias": "ADDRESS_NU"
+          },
+          {
+            "name": "ROAD",
+            "type": "esriFieldTypeString",
+            "alias": "ROAD",
+            "length": 50
+          },
+          {
+            "name": "FULL_ADDRE",
+            "type": "esriFieldTypeString",
+            "alias": "FULL_ADDRE",
+            "length": 60
+          },
+          {
+            "name": "APPR_STATU",
+            "type": "esriFieldTypeString",
+            "alias": "APPR_STATU",
+            "length": 16
+          },
+          {
+            "name": "STATUS",
+            "type": "esriFieldTypeString",
+            "alias": "STATUS",
+            "length": 16
+          },
+          {
+            "name": "PIN_NUMBER",
+            "type": "esriFieldTypeString",
+            "alias": "PIN_NUMBER",
+            "length": 20
+          },
+          {
+            "name": "PID",
+            "type": "esriFieldTypeString",
+            "alias": "PID",
+            "length": 20
+          },
+          {
+            "name": "CITY_TAX_C",
+            "type": "esriFieldTypeString",
+            "alias": "CITY_TAX_C",
+            "length": 30
+          },
+          {
+            "name": "SECTIONID",
+            "type": "esriFieldTypeDouble",
+            "alias": "SECTIONID"
+          },
+          {
+            "name": "CITY",
+            "type": "esriFieldTypeString",
+            "alias": "CITY",
+            "length": 25
+          },
+          {
+            "name": "ZIP",
+            "type": "esriFieldTypeString",
+            "alias": "ZIP",
+            "length": 12
+          },
+          {
+            "name": "ESN",
+            "type": "esriFieldTypeString",
+            "alias": "ESN",
+            "length": 6
+          },
+          {
+            "name": "X",
+            "type": "esriFieldTypeDouble",
+            "alias": "X"
+          },
+          {
+            "name": "Y",
+            "type": "esriFieldTypeDouble",
+            "alias": "Y"
+          },
+          {
+            "name": "LATITUDE",
+            "type": "esriFieldTypeDouble",
+            "alias": "LATITUDE"
+          },
+          {
+            "name": "LONGITUDE",
+            "type": "esriFieldTypeDouble",
+            "alias": "LONGITUDE"
+          },
+          {
+            "name": "SEGMENTID",
+            "type": "esriFieldTypeDouble",
+            "alias": "SEGMENTID"
+          },
+          {
+            "name": "VERIFIED",
+            "type": "esriFieldTypeString",
+            "alias": "VERIFIED",
+            "length": 16
+          },
+          {
+            "name": "ROADID",
+            "type": "esriFieldTypeDouble",
+            "alias": "ROADID"
+          },
+          {
+            "name": "VESN",
+            "type": "esriFieldTypeString",
+            "alias": "VESN",
+            "length": 30
+          },
+          {
+            "name": "FIRE_TAX_C",
+            "type": "esriFieldTypeString",
+            "alias": "FIRE_TAX_C",
+            "length": 10
+          },
+          {
+            "name": "SCHOOL_TAX",
+            "type": "esriFieldTypeString",
+            "alias": "SCHOOL_TAX",
+            "length": 10
+          },
+          {
+            "name": "EMS_TAX_CO",
+            "type": "esriFieldTypeString",
+            "alias": "EMS_TAX_CO",
+            "length": 10
+          },
+          {
+            "name": "ELECTRICID",
+            "type": "esriFieldTypeString",
+            "alias": "ELECTRICID",
+            "length": 11
+          },
+          {
+            "name": "CREATEDATE",
+            "type": "esriFieldTypeDate",
+            "alias": "CREATEDATE",
+            "length": 8
+          },
+          {
+            "name": "CREATEDBY",
+            "type": "esriFieldTypeString",
+            "alias": "CREATEDBY",
+            "length": 30
+          },
+          {
+            "name": "LASTEDITDA",
+            "type": "esriFieldTypeDate",
+            "alias": "LASTEDITDA",
+            "length": 8
+          },
+          {
+            "name": "LASTEDITED",
+            "type": "esriFieldTypeString",
+            "alias": "LASTEDITED",
+            "length": 25
+          },
+          {
+            "name": "SPECIAL_TA",
+            "type": "esriFieldTypeString",
+            "alias": "SPECIAL_TA",
+            "length": 10
+          },
+          {
+            "name": "NOTES",
+            "type": "esriFieldTypeString",
+            "alias": "NOTES",
+            "length": 50
+          },
+          {
+            "name": "LOT",
+            "type": "esriFieldTypeString",
+            "alias": "LOT",
+            "length": 10
+          },
+          {
+            "name": "ALIAS",
+            "type": "esriFieldTypeString",
+            "alias": "ALIAS",
+            "length": 50
+          },
+          {
+            "name": "BUFF_DIST",
+            "type": "esriFieldTypeDouble",
+            "alias": "BUFF_DIST"
+          },
+          {
+            "name": "ORIG_FID",
+            "type": "esriFieldTypeInteger",
+            "alias": "ORIG_FID"
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Output Polygons",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "draw"
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "Output_Polygons",
+    "Input_Features"
+  ]
+}
